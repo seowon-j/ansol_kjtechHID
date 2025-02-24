@@ -22,7 +22,7 @@ const DEFAULT_OPTIONS = {
   },
   preloadLngs: ['en', 'ko'], 
   fallbackLng: "en",
-  loadPath: '/json/{{lng}}.json',
+  loadPath: './json/{{lng}}.json',
 }
 
 class Translator {
