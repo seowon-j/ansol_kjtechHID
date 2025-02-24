@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Head] start -->
+
+  <head>
+    <title>SENTINEL X</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="SENTINEL X" />
+    <meta name="keywords" content="SENTINEL X" />
+    <meta name="author" content="CodedThemes" />
+
+    <link href="/css/plugins/bootstrap.min.css" rel="stylesheet" />
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
+    <!-- [Google Font] Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link" />
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="/fonts/material.css" />
+    <!-- [remix Icon] -->
+    <link rel="stylesheet" href="/fonts/remixicon/remixicon.css" />
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="/css/style-preset.css" />
+    <!-- custom theme-1 -->
+    <link rel="stylesheet" href="/css/style-custom.css" />
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body data-pc-preset="theme-1" data-pc-direction="ltr" data-pc-theme="dark">
+    <div id="wrapper">
+      <!-- [sidebar] -->
+      <nav class="pc-sidebar includeJs" data-include-html="/include/sidebar.html"></nav>
+      <!-- //sidebar -->
+
+      <!-- [content]  -->
+      <main id="contents" class="container">
+        <div class="row pt-3">
+          <div class="col p-0">
+            <div class="card main-visual rounded-2 overflow-hidden position-relative">
+              <div class="includeJs card-body" data-include-html="/include/sub-header.html"></div>
+            </div>
+            <!-- //main-visual -->
+            <div class="row">
+              <div class="tab-content col" id="myTabContent2">
+                <div class="tab-pane fade show active" id="tab-menu-pane-1" role="tabpanel" aria-labelledby="tab-menu-1" tabindex="0">
+                  <!-- [목록 시작] -->
+                  <div class="row" id="entryLog">
+                    <div class="col-12">
+                      <div class="card p-3">
+                        <div class="card-body">
+                          <h5 class="text-white mb-3">Entry Log Search</h5>
+                          <!-- [검색 입력폼] -->
+                          <div class="search-top-box mb-5 mt-4">
+                            <div class="searchInput input-group d-flex align-items-center gap-2">
+                              <label for="">Search</label>
+                              <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="User Name">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Robert</a></li>
+                                <li><a class="dropdown-item" href="#">David</a></li>
+                                <li><a class="dropdown-item" href="#">Stephen</a></li>
+                                <li><a class="dropdown-item" href="#">Scott</a></li>
+                                <li><a class="dropdown-item" href="#">Julie</a></li>
+                                <li><a class="dropdown-item" href="#">Malinda</a></li>
+                              </ul>
+                            </div>
+                            <!-- //검색 -->
+                            <!-- [상태] -->
+                             <div class="status-select d-flex align-items-center gap-2">
+                              <label for="" class="w-50">Entry Status</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                             </div>
+                             <!-- //상태 -->
+                            <!-- [날짜] -->
+                             <div class="date-wrap d-flex align-items-center gap-2">
+                              <label for="" >DATE</label>
+                              <input type="date" id="startDate" lang="en">
+                               <input type="date" id="endDate" lang="en">
+                               <select class="form-select" aria-label="date select">
+                                <option selected>This Week</option>
+                                <option value="1">monthly</option>
+                                <option value="2">yearly</option>
+                                <option value="3">daily</option>
+                              </select>
+                             </div>
+                             <!-- //날짜 -->
+                              <!-- [버튼] -->
+                              <div class="btn-wrap d-flex align-items-center gap-2">
+                                <button type="button" class="btn btn-gray btn-md"><i class="ri-reset-left-fill"></i></button>
+                                <button class="btn ms-auto btn-primary" type="button">Search</button>
+                              </div>
+                               <!-- //버튼 -->
+                          </div>
+                          <!-- //검색 입력폼 -->
+                          <!-- [검색결과 리스트 상단] -->
+                          <div class="search-list-box">
+                            <div class="d-flex align-items-center">
+                              <h5 class="text-white mb-3">Entry Log</h5>
+                            </div>
+                            <div id="myGrid1"></div>
+                          </div>
+                          <!-- //검색결과 -->
+                        </div>
+                        <!-- //card -->
+                      </div>
+                      <!-- //col-12 -->
+                    </div>
+                  </div>
+                  <!-- //entryLog -->
+                </div>
+                <!-- //tab_01 -->
+                <div class="tab-pane fade" id="tab-menu-pane-2" role="tabpanel" aria-labelledby="tab-menu-2" tabindex="0">두번째 탭 입니다.</div>
+                <!-- //tab_02 -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- grid 1 -->
+      </main>
+      <!-- //[content] -->
+    </div>
+    <!-- //wrapper -->
+
+    <!-- js -->
+    <script src="/js/basic.js"></script>
+
+    <!-- Required Js -->
+    <script src="/js/plugins/popper.min.js"></script>
+    <script src="/js/plugins/simplebar.min.js"></script>
+    <script src="/js/plugins/bootstrap.min.js"></script>
+    <script src="/js/fonts/custom-font.js"></script>
+    <script src="/js/fonts/custom-ant-icon.js"></script>
+    <script src="/js/plugins/i18next.min.js"></script>
+    <script src="/js/plugins/i18nextHttpBackend.min.js"></script>
+    <script src="/js/pcoded.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/multi-lang.js"></script>
+    <script src="/js/plugins/feather.min.js"></script>
+    <script src="/js/plugins/ag-grid-community.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script> -->
+
+    <!-- js 추가 -->
+    <script src="/js/table.js"></script>
+  </body>
+  <!-- [Body] end -->
+</html>

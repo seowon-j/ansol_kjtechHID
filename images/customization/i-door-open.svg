@@ -1,0 +1,19 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 610">
+<rect id="Rectangle 897" width="40" height="40" rx="2" fill="url(#paint0_linear_327_5044)"/>
+<g id="door_front">
+<mask id="mask0_327_5044" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="28" height="28">
+<rect id="Bounding box" x="6" y="6" width="28" height="28" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_327_5044)">
+<path id="door_front_2" d="M9.5 30.5H30.5V28.1667H28.1667V9.5H11.8333V28.1667H9.5V30.5ZM22.3333 21.1667C22.0028 21.1667 21.7257 21.0549 21.5021 20.8313C21.2785 20.6076 21.1667 20.3306 21.1667 20C21.1667 19.6694 21.2785 19.3924 21.5021 19.1687C21.7257 18.9451 22.0028 18.8333 22.3333 18.8333C22.6639 18.8333 22.941 18.9451 23.1646 19.1687C23.3882 19.3924 23.5 19.6694 23.5 20C23.5 20.3306 23.3882 20.6076 23.1646 20.8313C22.941 21.0549 22.6639 21.1667 22.3333 21.1667Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_327_5044" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#20DC3C"/>
+<stop offset="1" stop-color="#139958"/>
+</linearGradient>
+</defs>
+</svg>

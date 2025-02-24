@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Head] start -->
+
+  <head>
+    <title>SENTINEL X</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="SENTINEL X" />
+    <meta name="keywords" content="SENTINEL X" />
+    <meta name="author" content="CodedThemes" />
+
+    <link href="/css/plugins/bootstrap.min.css" rel="stylesheet" />
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
+    <!-- [Google Font] Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link" />
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="/fonts/material.css" />
+    <!-- [remix Icon] -->
+    <link rel="stylesheet" href="/fonts/remixicon/remixicon.css" />
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="/css/style.css" id="main-style-link" />
+    <link rel="stylesheet" href="/css/style-preset.css" />
+    <!-- custom theme-1 -->
+    <link rel="stylesheet" href="/css/style-custom.css" />
+  </head>
+  <!-- [Head] end -->
+  <!-- [Body] Start -->
+
+  <body data-pc-preset="theme-1" data-pc-direction="ltr" data-pc-theme="dark">
+    <div id="wrapper">
+      <!-- [sidebar] -->
+      <nav class="pc-sidebar includeJs" data-include-html="/include/sidebar.html"></nav>
+      <!-- //sidebar -->
+
+      <!-- [content]  -->
+      <main id="contents" class="container">
+        <div class="row pt-3">
+          <div class="col p-0">
+            <div class="card main-visual rounded-2 overflow-hidden position-relative">
+              <div class="includeJs card-body" data-include-html="/include/header.html"></div>
+            </div>
+            <!-- //main-visual -->
+            <div class="row">
+              <div class="tab-content col" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-menu-pane-1" role="tabpanel" aria-labelledby="tab-menu-1" tabindex="0">
+                  <!-- [메인 대시보드 시작] -->
+                  <div class="con-wrap row" id="main-dashboard">
+                    <div class="col-8">
+                      <div class="card p-3">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                          <h5 class="text-white mb-0" data-i18n="doorControl">출입문 제어</h5>
+                          <select class="form-select w-25 btn-md" aria-label="Default select example">
+                            <option selected data-i18n="The class A">더클래스 a동</option>
+                            <option value="1" data-i18n="B">B동</option>
+                            <option value="2" data-i18n="C">C동</option>
+                            <option value="3" data-i18n="D">D동</option>
+                          </select>
+                          <select class="form-select w-25 btn-md" aria-label="Default select example">
+                            <option selected data-i18n="1F">1층</option>
+                            <option value="4" data-i18n="2F">2층</option>
+                            <option value="5" data-i18n="3F">3층</option>
+                            <option value="6" data-i18n="4F">4층</option>
+                          </select>
+                          <button class="btn add-fill ms-auto btn-md btn-gray" type="button" data-i18n="more">더보기</button>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="chart-wrap position-relative">
+                              <div id="chart1"></div>
+                              <div class="chart-custom-label text-center">
+                                <p class="status" data-i18n="normalOperation">정상 작동중</p>
+                                <p class="value">78<span>%</span></p>
+                                <p class="description" data-i18n="operationStatus">출입문 운영상태</p>
+                              </div>
+                            </div>
+                            <!-- //chart-wrap -->
+                            <ul class="list-group chart-list list-group-flush">
+                              <li class="list-group-item">
+                                <span class="status-icon" data-i18n="normalOperation">정상 작동</span>
+                                <span><b>280</b></span>
+                              </li>
+                              <li class="list-group-item">
+                                <span class="status-icon" data-i18n="deactivation">비활성화</span>
+                                <span><b>16</b></span>
+                              </li>
+                              <li class="list-group-item">
+                                <span class="status-icon" data-i18n="malfunction">기능 고장</span>
+                                <span><b>4</b></span>
+                              </li>
+                              <li class="list-group-item">
+                                <span class="status-icon" data-i18n="underInspection">점검중</span>
+                                <span><b>34</b></span>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="container col-8 main-board">
+                            <div class="con-wrap row gap-2">
+                              <!-- loop -->
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="gate1">메인 정문 01</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <!-- //loop -->
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="gate2">메인 정문 02</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="gate3">메인 후문 01</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="gate4">메인 후문 02</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="sr1">서버실 01</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="sr2">서버실 02</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="ser">보안실</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="mtr1">회의실</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="mtr2">회의실01</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+                              <div class="item col">
+                                <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
+                                  <input class="form-check-input" type="checkbox" checked />
+                                  <i class="i-door"></i>
+                                </div>
+                                <h5 class="mt-2 text-white pt-3" data-i18n="mtr3">회의실 02</h5>
+                                <p class="text-status text-white-50 mb-0">출입문이 잠겨있습니다.</p>
+                              </div>
+
+                              <!-- //loop -->
+                            </div>
+                          </div>
+                          <!-- //door-container -->
+                        </div>
+                      </div>
+                      <!-- //출입문 제어-->
+                      <div class="d-flex gap-3">
+                        <div class="card col p-3 mb-0">
+                          <h5 class="text-white mb-2" data-i18n="overallEntrance">전체 출입문 개요</h5>
+                          <div class="row door-overview">
+                            <div class="col-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white-50 fw-normal" data-i18n="normalOperation">정상작동</h5>
+                                  <p class="card-text"><strong>280</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white-50 fw-normal" data-i18n="deactivation">비활성화</h5>
+                                  <p class="card-text"><strong>16</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="card mb-0">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white-50 fw-normal" data-i18n="malfunction">기능 고장</h5>
+                                  <p class="card-text"><strong>4</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="card mb-0">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white-50 fw-normal" data-i18n="underInspection">점검중</h5>
+                                  <p class="card-text"><strong>34</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //출입문 개요 -->
+                        <div class="card col p-3 mb-0 door-statis">
+                          <div class="card-body d-flex justify-content-between align-items-center p-0">
+                            <div class="d-flex gap-2 align-items-center mb-2">
+                              <h5 class="text-white mb-0" data-i18n="entranceStatistics">출입문 통계</h5>
+                              <select class="form-select w-100 btn-md" aria-label="Default select example">
+                                <option selected data-i18n="daily">일일</option>
+                                <option value="1" data-i18n="weekly">주간</option>
+                                <option value="2" data-i18n="monthly">월간</option>
+                                <option value="3" data-i18n="yearly">연간</option>
+                              </select>
+                            </div>
+                            <button class="btn add-fill ms-auto btn-md btn-gray" type="button" data-i18n="more">더보기</button>
+                          </div>
+                          <div id="chart2"></div>
+                        </div>
+                        <!-- //출입문 통계 -->
+                      </div>
+                    </div>
+                    <!-- [출입문 관리] -->
+                    <div class="col-4">
+                      <div class="card p-3 mb-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 class="text-white mb-2" data-i18n="recentEntry">최근 출입 기록</h5>
+                          <div class="d-flex align-items-center gap-2">
+                            <button type="button" class="btn btn-gray btn-md"><i class="ri-reset-left-fill"></i></button>
+                            <button class="btn add-fill ms-auto btn-md btn-gray" type="button" data-i18n="more">더보기</button>
+                          </div>
+                        </div>
+                        <!-- 리스트 -->
+                        <div class="log-wrap">
+                           <!-- [리스트 시작 :: 출입기록이 없을때 - 필요할때 사용] -->
+                           <!-- <div class="list-none text-center position-absolute top-50 start-50 translate-middle">
+                            <i class="d-block mb-3"><img src="/images/customization/i-log-door.svg" alt="출입기록 아이콘"></i>
+                            <h4 class="text-white" data-i18n="accessRecords">출입 기록이 없습니다.</h4>
+                            <p class="text-white-50 lh-base" data-i18n="accessRecords2">출입 이력이 없습니다.<br> 출입시스템이 정상적으로 작동하는지 확인하세요.</p>
+                          </div> -->
+                          <!-- [리스트 시작 :: 출입기록이 있을때] -->
+                          <ul class="list-group mt-3 position-relative">
+                            <!-- [정상 출입] -->
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <!-- [오류 발생] -->
+                            <li class="list-group-item rounded-2 error">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <!-- loop -->
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="list-group-item rounded-2">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
+                            <!-- //loop -->
+                          </ul>
+                          <!-- //리스트 끝 -->
+                        </div>
+                        <!-- //log-wrap -->
+                      </div>
+                      <!-- //card -->
+                    </div>
+                    <!-- //출입문 관리 -->
+                  </div>
+                  <!-- //메인 대시보드 -->
+                </div>
+                <!-- <div class="tab-pane fade" id="tab-menu-pane-2" role="tabpanel" aria-labelledby="tab-menu-2" tabindex="0">대시보드2</div>
+                <div class="tab-pane fade" id="tab-menu-pane-3" role="tabpanel" aria-labelledby="tab-menu-3" tabindex="0">대시보드3</div>
+                <div class="tab-pane fade" id="tab-menu-pane-4" role="tabpanel" aria-labelledby="tab-menu-4" tabindex="0">대시보드4</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- grid 1 -->
+      </main>
+      <!-- //[content] -->
+    </div>
+    <!-- //wrapper -->
+
+    <!-- js -->
+    <script src="/js/basic.js"></script>
+    <script src="/js/table.js"></script>
+
+    <!-- [Page Specific JS] start -->
+    <script src="/js/plugins/apexcharts.min.js"></script>
+    <script src="/js/Widgets/visitor-chart.js"></script>
+    <script src="/js/Widgets/income-overview-chart.js"></script>
+    <script src="/js/Widgets/analytics-report-chart.js"></script>
+    <script src="/js/Widgets/sales-report-chart.js"></script>
+    <!-- [Page Specific JS] end-->
+
+    <!-- Required Js -->
+    <script src="/js/plugins/popper.min.js"></script>
+    <script src="/js/plugins/simplebar.min.js"></script>
+    <script src="/js/plugins/bootstrap.min.js"></script>
+    <script src="/js/fonts/custom-font.js"></script>
+    <script src="/js/fonts/custom-ant-icon.js"></script>
+    <script src="/js/plugins/i18next.min.js"></script>
+    <script src="/js/plugins/i18nextHttpBackend.min.js"></script>
+    <script src="/js/pcoded.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/multi-lang.js"></script>
+    <script src="/js/plugins/feather.min.js"></script>
+    
+
+    <script src="/js/chart.js"></script>
+  </body>
+  <!-- [Body] end -->
+</html>

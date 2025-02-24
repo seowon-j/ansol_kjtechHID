@@ -1,0 +1,13 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 634">
+<rect id="Rectangle 901" width="40" height="40" rx="2" fill="#5C5C62"/>
+<g id="door_open">
+<mask id="mask0_327_5146" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="28" height="28">
+<rect id="Bounding box" x="6" y="6" width="28" height="28" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_327_5146)">
+<path id="door_open_2" d="M9.5 30.5V28.1667H11.8333V9.5H28.1667V28.1667H30.5V30.5H9.5ZM23.5 28.1667H25.8333V11.8333H23.5V28.1667ZM18.8333 21.1667C19.1639 21.1667 19.441 21.0549 19.6646 20.8313C19.8882 20.6076 20 20.3306 20 20C20 19.6694 19.8882 19.3924 19.6646 19.1687C19.441 18.9451 19.1639 18.8333 18.8333 18.8333C18.5028 18.8333 18.2257 18.9451 18.0021 19.1687C17.7785 19.3924 17.6667 19.6694 17.6667 20C17.6667 20.3306 17.7785 20.6076 18.0021 20.8313C18.2257 21.0549 18.5028 21.1667 18.8333 21.1667Z" fill="white"/>
+</g>
+</g>
+</g>
+</svg>
