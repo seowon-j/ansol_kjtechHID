@@ -268,3 +268,7 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .search-top-box button{height: 36px;border: 1px solid #383838;}
 .search-top-box input[type="date"]{border: 1px solid #383838;background-color:transparent;color: #fff;padding: 10px;border-radius: 4px;}
 .search-top-box input[type="date"]::-webkit-calendar-picker-indicator {filter: invert(1);opacity: 1;cursor: pointer;}
+
+/* [sub page] 샘플 이미지 */
+.container .img-wrap{height: 800px;}
+.container .img-wrap img{object-fit: contain;height: 100%;}
