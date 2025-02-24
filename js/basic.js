@@ -24,10 +24,57 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // 화면 고정 및 스크롤 방지
+// function setBodyHeight() {
+//     document.body.style.height = `${window.screen.height}px`;
+//     document.body.style.overflow = "hidden";
+// }
+// 페이지 로드 및 창 크기 변경 시 적용
+// document.addEventListener("DOMContentLoaded", setBodyHeight);
+// window.addEventListener("resize", setBodyHeight);
+
+
+// 화면 고정 및 스크롤 방지 (1920x1080에서만 적용)
 function setBodyHeight() {
-    document.body.style.height = `${window.screen.height}px`;
-    document.body.style.overflow = "hidden";
+    const container = document.querySelector(".container");
+    
+    if (window.innerWidth === 1920 && window.innerHeight === 1080) {
+        document.body.style.height = `${window.screen.height}px`;
+        document.body.style.overflow = "hidden"; 
+
+        if (container) {
+            container.style.overflow = "hidden";
+        }
+    } else {
+        document.body.style.height = "auto";
+        document.body.style.overflowX = "hidden"; 
+        document.body.style.overflowY = "auto";
+
+        if (container) {
+            container.style.overflowX = "hidden";
+            container.style.overflowY = "scroll"; 
+            container.style.maxHeight = "100vh";
+            
+            // 스크롤바 숨기는 스타일 추가
+            container.style.scrollbarWidth = "none"; // Firefox
+            container.style.msOverflowStyle = "none"; // IE & Edge
+        }
+    }
 }
+
+// 스크롤바 숨기기 (Webkit 기반 브라우저 - Chrome, Safari)
+const style = document.createElement("style");
+style.innerHTML = `
+    .container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+`;
+document.head.appendChild(style);
+
+// 페이지 로드 및 창 크기 변경 시 적용
+document.addEventListener("DOMContentLoaded", setBodyHeight);
+window.addEventListener("resize", setBodyHeight);
+
+
 
 // 알림 버튼 클릭 시 컨테이너 활성화/비활성화
 function handleAlertToggle() {
