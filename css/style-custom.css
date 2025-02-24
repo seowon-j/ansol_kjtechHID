@@ -127,10 +127,10 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .pc-quick-btn-list .btn .i-btn.ic-quick-3:before{background-image: url(../images/customization/i-door-off.svg);}
 .pc-quick-btn-list .btn .i-btn.ic-quick-4:before{background-image: url(../images/customization/i-clinical-off.svg);}
 
-.pc-quick-btn-list .btn:hover .i-btn.ic-quick-1:before{background-image:url(../images/customization/i-dashboard-on.svg);}
-.pc-quick-btn-list .btn:hover .i-btn.ic-quick-2:before{background-image:url(../images/customization/i-carmera-on.svg)}
-.pc-quick-btn-list .btn:hover .i-btn.ic-quick-3:before{background-image:url(../images/customization/i-door-on.svg)}
-.pc-quick-btn-list .btn:hover .i-btn.ic-quick-4:before{background-image:url(../images/customization/i-clinical-on.png)}
+.pc-quick-btn-list .btn:hover .i-btn.ic-quick-1:before, .pc-quick-btn-list .btn:active .i-btn.ic-quick-1:before, .pc-quick-btn-list .btn:focus .i-btn.ic-quick-1:before{background-image:url(../images/customization/i-dashboard-on.svg);}
+.pc-quick-btn-list .btn:hover .i-btn.ic-quick-2:before, .pc-quick-btn-list .btn:active .i-btn.ic-quick-2:before, .pc-quick-btn-list .btn:focus .i-btn.ic-quick-2:before{background-image:url(../images/customization/i-carmera-on.svg)}
+.pc-quick-btn-list .btn:hover .i-btn.ic-quick-3:before, .pc-quick-btn-list .btn:active .i-btn.ic-quick-3:before, .pc-quick-btn-list .btn:focus .i-btn.ic-quick-3:before{background-image:url(../images/customization/i-door-on.svg)}
+.pc-quick-btn-list .btn:hover .i-btn.ic-quick-4:before, .pc-quick-btn-list .btn:active .i-btn.ic-quick-4:before, .pc-quick-btn-list .btn:focus .i-btn.ic-quick-4:before{background-image:url(../images/customization/i-clinical-on.png)}
 
 .pc-quick-btn-list .btn:hover,
 .pc-quick-btn-list .btn:active,
