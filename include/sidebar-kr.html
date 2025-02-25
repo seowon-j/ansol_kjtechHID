@@ -1,0 +1,157 @@
+<!-- [sidebar] -->
+
+<div class="navbar-wrapper">
+  <div class="m-header mb-4 d-flex justify-content-between">
+    <a href="javascript:void(0);">
+      <img src="images/logo-dark.svg" class="img-fluid logo-lg" alt="logo" />
+    </a>
+    <button type="button" class="btn menu-all d-flex justify-content-center align-items-center">
+      <span>메뉴</span>
+    </button>
+  </div>
+  <!-- //m-header -->
+  <div class="position-relative mb-4">
+    <form>
+      <i class="ri-search-line icon-search"></i>
+      <input type="search" class="form-control search-form" placeholder="Search" />
+    </form>
+  </div>
+
+  <p class="pc-caption pc-caption-btn mb-1 d-flex align-items-center">
+    <label>빠른 메뉴</label>
+    <button class="btn" type="button">
+      <span>설정</span>
+      <i class="ri-settings-4-fill"></i>
+    </button>
+  </p>
+  <div class="navbar-btn-content mb-4">
+    <ul class="pc-quick-btn-list d-flex flex-wrap justify-content-center align-items-center">
+      <li class="rounded-2">
+        <button type="button" class="btn d-flex flex-column justify-content-center align-items-center" onclick="location.href='index.html'">
+          <i class="i-btn ic-quick-1"></i>
+          <span>메인 대시보드</span>
+        </button>
+      </li>
+      <li class="rounded-2">
+        <button type="button" class="btn d-flex flex-column justify-content-center align-items-center">
+          <i class="i-btn ic-quick-2"></i>
+          <span>CCTV 모니터링</span>
+        </button>
+      </li>
+      <li class="rounded-2">
+        <button type="button" class="btn d-flex flex-column justify-content-center align-items-center">
+          <i class="i-btn ic-quick-3"></i>
+          <span>출입문 관리</span>
+        </button>
+      </li>
+      <li class="rounded-2">
+        <button type="button" class="btn d-flex flex-column justify-content-center align-items-center">
+          <i class="i-btn ic-quick-4"></i>
+          <span>사용자 관리</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- //navbar-btn-content -->
+  <p class="pc-caption pc-caption-btn mb-1 p-0">
+    <label>주요 메뉴</label>
+  </p>
+  <div class="navbar-content mb-3">
+    <ul class="pc-navbar">
+      <li class="pc-item mb-1">
+        <a href="index.html" class="pc-link pc-main-link">
+          <span class="pc-mtext">메인 대시보드</span>
+        </a>
+      </li>
+      <!-- //data-i18n -->
+      <li class="pc-item pc-hasmenu">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">CCTV 관리</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">CCTV 목록</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">실시간 모니터링</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">녹화 영상 조회</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">알림 설정</a></li>
+        </ul>
+      </li>
+      <li class="pc-item pc-hasmenu rounded-2">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">생체정보 출퇴근 관리</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">출퇴근 기록</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">생체정보 등록</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">출퇴근 통계</a></li>
+        </ul>
+      </li>
+      <li class="pc-item pc-hasmenu rounded-2">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">직원 정보 관리</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="sub-01.html">직원 목록</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">부서관리</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">권한관리</a></li>
+        </ul>
+      </li>
+      <li class="pc-item pc-hasmenu">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">보안 관리</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">출입 권한 설정</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">보안 로그</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">보안 정책</a></li>
+        </ul>
+      </li>
+      <li class="pc-item pc-hasmenu">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">시스템 설정</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">시스템 정보</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">백업 및 복원</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">사용자 관리</a></li>
+        </ul>
+      </li>
+      <li class="pc-item pc-hasmenu">
+        <a href="javascript:void(0);" class="pc-link">
+          <span class="pc-mtext">도움말</span>
+          <span class="pc-arrow"><i class="ri-arrow-down-s-fill"></i></span>
+        </a>
+        <ul class="pc-submenu rounded-2">
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">FAQ</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">사용자 메뉴얼</a></li>
+          <li class="pc-item"><a class="pc-link" href="javascript:void(0);">기술 지원 연락처</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- //navbar-content -->
+  <div class="admin-container">
+    <div class="d-flex justify-content-between">
+      <button class="admin-btn admin-btn1 btn">환경 설정</button>
+      <button class="admin-btn admin-btn2 btn">도움말</button>
+    </div>
+    <div class="admin-profile d-flex align-items-center justify-content-between">
+      <div class="admin-info">
+        <h6 class="mb-1 fs-6">Ansolutions</h6>
+        <p class="m-0">admin@admin.com</p>
+      </div>
+      <button class="btn btn-lg text-white p-0">
+        <i class="ri-more-2-fill"></i>
+      </button>
+    </div>
+    <div>
+      <p class="info-caption">스마트 보안관제 솔루션 <span>AnsolutionⓒAll right Reserved.</span></p>
+    </div>
+  </div>
+  <!-- //admin-container -->
+</div>
+<!-- //[sidebar] -->

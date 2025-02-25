@@ -104,3 +104,15 @@ function setupDoorStatusToggle() {
     });
 }
 
+// 오늘 날짜 가져오기
+function setTodayDate() {
+    let today = new Date();
+    let formattedDate = today.toISOString().split('T')[0]; // YYYY-MM-DD 형식
+
+    document.getElementById("startDate").value = formattedDate;
+    document.getElementById("endDate").value = formattedDate;
+}
+
+// 페이지 로드 시 실행
+window.onload = setTodayDate;
+

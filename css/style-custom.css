@@ -165,7 +165,7 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .main-visual .nav-tabs { --bs-nav-tabs-border-width: 0; --bs-nav-tabs-border-color: none; --bs-nav-tabs-link-hover-border-color: var(--bs-white); } 
 .main-visual .nav-link { color: var(--bs-white); padding: 12px 16px; } 
 .main-visual .nav-link.disabled { opacity: 0.5; } 
-.main-visual .card-body { background: url(../images/customization/main-visual.svg) 0 0 no-repeat; background-size: cover; } 
+.main-visual .card-body { /*background: url(../images/customization/main-visual.svg) 0 0 no-repeat;*/ } 
 
 /* 메인 대시보드 */
 #main-dashboard .card{background: rgba(44, 44, 44, 0.7);margin-bottom: 20px;--bs-card-border-color:#545465;}
@@ -253,8 +253,10 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .log-wrap .profile::before{content: "";background: url(../images/customization/i-profile-sample.svg)0 0 no-repeat;width: 16px;height: 16px;}
 
 /* [sub page] 목록 */
-#myGrid1{height: 500px;}
+#my-grid1, #my-grid2{height: 500px;}
+
 .search-list-box .action-icons .btn{padding: 5px;}
+.search-list-box ul{list-style: none;}
 .search-top-box{display: flex;align-items: center;justify-content: space-between;gap: 10px;}
 
 .search-top-box .searchInput {flex-basis: 30%;}
