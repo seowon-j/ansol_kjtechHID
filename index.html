@@ -49,9 +49,9 @@
                 <div class="tab-pane fade show active" id="tab-menu-pane-1" role="tabpanel" aria-labelledby="tab-menu-1" tabindex="0">
                   <!-- [메인 대시보드 시작] -->
                   <div class="con-wrap row" id="main-dashboard">
-                    <div class="col-lg-8 col-md-12">
+                    <div class="col-xxl-8 col-xl-12">
                       <div class="card p-3">
-                        <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="tit-wrap d-flex align-items-center gap-2 mb-3">
                           <h5 class="text-white mb-0" data-i18n="doorControl">출입문 제어</h5>
                           <select class="form-select w-25 btn-md" aria-label="Default select example">
                             <option selected data-i18n="The class A">더클래스 a동</option>
@@ -68,7 +68,7 @@
                           <button class="btn add-fill ms-auto btn-md btn-gray" type="button" data-i18n="more">더보기</button>
                         </div>
                         <div class="row">
-                          <div class="col-4">
+                          <div class="gauge-chart col-4">
                             <div class="chart-wrap position-relative">
                               <div id="chart1"></div>
                               <div class="chart-custom-label text-center">
@@ -97,8 +97,8 @@
                               </li>
                             </ul>
                           </div>
-                          <div class="container col-8 main-board">
-                            <div class="con-wrap row gap-2">
+                          <div class="col-md-8 main-board">
+                            <div class="con-wrap row gap-2 mx-0">
                               <!-- loop -->
                               <div class="item col">
                                 <div class="form-switch d-flex justify-content-between align-items-center flex-row-reverse p-0">
@@ -189,7 +189,7 @@
                         </div>
                       </div>
                       <!-- //출입문 제어-->
-                      <div class="d-flex gap-3">
+                      <div class="status-wrap d-flex gap-3 flex-wrap">
                         <div class="card col p-3 mb-0">
                           <h5 class="text-white mb-2" data-i18n="overallEntrance">전체 출입문 개요</h5>
                           <div class="row door-overview">
@@ -247,7 +247,7 @@
                       </div>
                     </div>
                     <!-- [출입문 관리] -->
-                    <div class="col-lg-4 col-md-12">
+                    <div class="recent-wrap col-xxl-4 col-xl-12">
                       <div class="card p-3 mb-0">
                         <div class="d-flex justify-content-between align-items-center">
                           <h5 class="text-white mb-2" data-i18n="recentEntry">최근 출입 기록</h5>
@@ -290,6 +290,19 @@
                               </a>
                             </li>
                             <!-- loop -->
+                            <li class="list-group-item rounded-2 error">
+                              <a href="#" class="rounded text-body">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                  <h5 class="text-body" data-i18n="recordSample">A동 1층 메인 정문 01</h5>
+                                  <span class="time text-muted text-white-50 fs-5">16:00:09</span>
+                                </div>
+                                <p class="error-txt v2 fs-5 d-flex gap-2"  data-i18n="logerrorSample1">인가되지 않은 사용자</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <span class="profile fs-5 d-flex gap-2" data-i18n="recordName">배경구</span>
+                                  <span class="department text-white-50" data-i18n="recordManage">경영지원본부 / 인사팀 / 과장</span>
+                                </div>
+                              </a>
+                            </li>
                             <li class="list-group-item rounded-2">
                               <a href="#" class="rounded text-body">
                                 <div class="d-flex justify-content-between align-items-center">
