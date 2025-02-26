@@ -54,6 +54,7 @@
   "recentEntry":"최근 출입 기록",
   "entranceStatistics":"출입문 통계",
   "recordSample":"A동 1층 메인 정문 01",
+  "logerrorSample":"지문 인식 오류",
   "recordName":"배경구",
   "recordManage":"경영지원본부 / 인사팀 / 과장",
   "alarmSample":"출입 초과 알림",
