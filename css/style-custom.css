@@ -79,6 +79,7 @@
 
 body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !important; } 
 
+.container{padding: 0 30px;}
 #wrapper { display: flex; height: 100%; } 
 
 /* btn */
