@@ -79,8 +79,8 @@
 
 body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !important; } 
 
-.container-fluid{padding: 0 30px;}
 #wrapper { display: flex; height: 100%; } 
+.breadcrumb{margin-bottom: 0;}
 
 /* btn */
 .btn.btn-gray { background: var(--bt-gray); } 
@@ -177,6 +177,7 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 #main-dashboard .card{background: rgba(44, 44, 44, 0.7);margin-bottom: 20px;--bs-card-border-color:#545465;}
 
 /* 알림창 */
+.notification{position: relative;display: flex;align-items: center;gap: 10px;}
 .notification .util::before{content: "\EDCF";font-family: var(--ifont1);font-size: 16px;color: #fff;}
 .notification .lang-switch, .main-visual .notification p { font-size: var(--fz-body-m); padding: 0; } 
 .notification .lang-switch:first-child{position: relative;display:inline-flex;align-items: center;gap: 10px;}
@@ -309,9 +310,17 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
     .status-wrap > .card.col{flex-basis: 100%!important;}   
 }
 @media screen and (max-width: 768px) {
+    .notification{display: none;}
     .gauge-chart{display: none;}
     #main-dashboard .tit-wrap select{display: none;}
+
 }
 @media screen and (max-width: 576px) {
     .main-board .item.col{max-width: 100%;}
+    .log-wrap .list-group::before{display: none;}
+    .log-wrap .list-group-item{margin-left: 0; max-width: 100%;}
+    .log-wrap .list-group-item::before, .log-wrap .list-group-item.error::before{display: none;}
+    .department , .door-statis{display: none;}
+    #main-dashboard .door-overview .card{margin-bottom: 10px;}
+    #main-dashboard .door-overview > div:last-child .card{margin-bottom: 0;}
 }
