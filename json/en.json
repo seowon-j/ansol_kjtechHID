@@ -57,7 +57,7 @@
   "recordSamplelong":"The Class Building 1st Floor Main Gate",
   "logerrorSample":"Error: Fingerprint Recognition",
   "logerrorSample1":"Error: Unauthorized user",
-  "unknown":"Error: Unknown",
+  "unknown":"Error: card not registered",
   "recordName":"Justin",
   "recordManage":"Planning Dept / Manager",
   "alarmSample":"Entrance alarm notification",
