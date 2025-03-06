@@ -57,7 +57,7 @@
   "recordSamplelong":"A동 건물의 1층에 위치한 주요 출입문 건물의 정문 역할을 하는 출입구 01번",
   "logerrorSample":"지문 인식 오류",
   "logerrorSample1":"인가되지 않은 사용자 오류",
-  "unknown":"알수없음",
+  "unknown":"카드 미등록 또는 인식 오류",
   "recordName":"배경구",
   "recordManage":"경영지원본부 / 인사팀 / 과장",
   "alarmSample":"출입 초과 알림",
