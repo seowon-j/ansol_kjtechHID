@@ -86,6 +86,16 @@ function handleAlertToggle() {
     }
 }
 
+//250306 버튼 클릭시 알림창 닫기
+document.addEventListener("click", function (event) {
+    if (event.target.closest(".close-btn")) {
+        const alertBox = event.target.closest(".alert-box");
+        if (alertBox) {
+            alertBox.style.display = "none"; 
+        }
+    }
+});
+
 // 출입문 상태 업데이트 (잠김 / 열림)
 function setupDoorStatusToggle() {
     document.querySelectorAll(".main-board .form-check-input").forEach(checkbox => {

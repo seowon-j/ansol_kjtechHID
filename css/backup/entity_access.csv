@@ -1,0 +1,6 @@
+id,entry_time,door_name,user_name,division,position,authentication_method,entry_status,note
+771e8400-e29b-41d4-a716-446655440000,2023-01-01 00:01:00,The Class Building 1st Floor Main Gate,Justin,Mnagemant Team,Mnager,Fingerprint recognition,PASS,None
+771e8400-e29b-41d4-a716-446655440001,2024-01-02 00:02:00,The Class Building 2nd Floor Back Gate,Sophia,Design Team,Assistant manager,RFID CARD,FAIL,Card recognition error
+771e8400-e29b-41d4-a716-446655440002,2025-01-03 00:03:00,The Class Bingding 3rd floor conference room,Emma,Production Team,Senior Staff,Fingerprint recognition,FAIL,Fingerprint recognition error
+771e8400-e29b-41d4-a716-446655440003,2026-01-04 00:04:00,The Class Building 4th Floor Conference Room,Avery,Accounting Team,Staff,RFID CARD,PASS,None
+771e8400-e29b-41d4-a716-446655440004,2026-01-04 00:04:00,The Class Building 5th Floor Conference Room,Ella,Law Dept,Intern,RFID CARD,PASS,None
