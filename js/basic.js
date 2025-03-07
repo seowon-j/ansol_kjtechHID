@@ -114,6 +114,30 @@ function setupDoorStatusToggle() {
     });
 }
 
+// 숫자 카운트 애니메이션
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.textContent = "0";
+
+  const targetNum = +counter.getAttribute("data-target");
+
+  const updateCounter = () => {
+    const count = +counter.textContent;
+
+    const increment = targetNum / 500;
+    const nextCount = Math.ceil(count + increment);
+
+    counter.textContent = nextCount > targetNum ? targetNum : nextCount;
+
+    if (count < targetNum) {
+      requestAnimationFrame(updateCounter);
+    }
+  };
+
+  updateCounter();
+});
+
 // 오늘 날짜 가져오기
 function setTodayDate() {
     let today = new Date();
@@ -126,3 +150,23 @@ function setTodayDate() {
 // 페이지 로드 시 실행
 window.onload = setTodayDate;
 
+
+// subpage sub-02 기능동작
+document.querySelector(".list-img-off").addEventListener("click", function() {
+    // `.info-wrap`에 `active` 클래스 추가
+    document.querySelector(".info-wrap").classList.add("active");
+
+    // 이미지 경로 변경
+    if (this.src.includes("user-list-off.svg")) {
+        this.src = this.src.replace("user-list-off.svg", "user-list-on.svg");
+    }
+});
+
+
+document.querySelector(".sub-02 .btn-card").addEventListener("click", function() {
+    document.querySelector(".sub-02 .input-modal").classList.add("on");
+});
+
+document.querySelector(".sub-02 .input-modal .submit").addEventListener("click", function() {
+    window.location.href = "sub-0201.html"; // 페이지 이동
+});

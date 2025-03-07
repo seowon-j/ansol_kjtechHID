@@ -233,7 +233,7 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .chart-custom-label .status { font-size: var(--fz-body-s); } 
 .chart-custom-label .value { font-size: 64px; font-weight: 700; } 
 .chart-custom-label .value span { font-size: var(--fz-body-m); font-weight: 400; } 
-.chart-custom-label .description { font-size: var(--fz-body-m); color: var(--bs-gray); } 
+.chart-custom-label .description { font-size: var(--fz-body-s); color: var(--bs-gray); padding: 0 10px;line-height: 18px;} 
 
 /* 출입문 개요 */
 .door-overview .card{border: none;background:VAR(--bs-gray2) !important;margin-bottom: 0;}
@@ -289,6 +289,62 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 /* [sub page] 샘플 이미지 */
 .container .img-wrap{height: 800px;}
 .container .img-wrap img{object-fit: contain;height: 100%;}
+
+/* subpage-user-list sample update */
+/* reset */
+.sub-02 ul{margin: 0; padding: 0; list-style-type: none;}
+.sub-02 a{text-decoration: none;color: inherit;}
+
+.sub-02 .con-wrap{display: flex; background: rgba(44,44,44,.7);border: 1px solid #545465;border-radius: 4px;padding: 20px;}
+.sub-02 .con-wrap .img-box{padding-right: 20px;}
+.sub-02 .con-wrap .list-img-on{display: none;}
+.sub-02 .con-wrap .info-wrap{padding-left: 20px;border-left: 1px solid #545465;}
+.sub-02 .con-wrap .info-box.s01{padding-bottom: 20px;}
+.sub-02 .con-wrap .info-box.s02{border-top:1px solid #545465;padding-top: 20px;}
+.sub-02 .con-wrap .info-box .tit {color: #fff; font-weight: 600; font-size: 18px; padding-bottom: 20px;}
+
+.sub-02 .con-wrap .info-wrap{display: none;}
+.sub-02 .con-wrap .info-wrap.active{display: block;}
+
+/* 기본정보 */
+.sub-02 .profile-info{display: flex;flex-direction: column;width: 230px;align-items: center;justify-content: space-between;}
+.sub-02 .profile-info .userimg{background: url(../images/customization/user-list-profile.svg) 0 0 no-repeat;background-size: 100%;width:68px;height: 68px;}
+.sub-02 .profile-info strong{font-size: 20px;font-weight: 600;}
+.sub-02 .profile-info em{font-size: 14px;}
+.sub-02 .profile-info .work{background: #323235;padding: 20px 10px;border-radius: 4px;}
+.sub-02 .profile-info .work .type span{color: #FFB245;background: rgba(255, 178, 69, 0.1);padding: 4px 8px;}
+
+.sub-02 .con-wrap .btn-list{display: flex;align-items: center;gap: 10px;}
+.sub-02 .con-wrap .btn-list li{border: 1px solid #545465;border-radius: 4px;}
+.sub-02 .con-wrap .btn-list li a{padding: 10px;}
+.sub-02 .con-wrap .btn-list li a:hover{background: #444446;}
+
+.sub-02 .con-wrap .card-box{border: 1px solid #3A3A3F;padding: 20px;border-radius: 4px;}
+.sub-02 .con-wrap .cbox{border: 1px solid #3a3a3f;border-radius: 4px;padding: 10px;}
+
+.sub-02 .input-info-box{width: calc(100% - 230px);}
+.sub-02 .input-info-box strong{padding-bottom: 20px;display: block;}
+.sub-02 .input-info-box ul{display: flex;flex-wrap: wrap;align-items: center;}
+.sub-02 .input-info-box ul li{display: flex;align-items: center;width: 50%;padding-bottom: 15px;}
+.sub-02 .input-info-box ul li:nth-last-child(-n+2){padding-bottom: 0;}
+.sub-02 .input-info-box ul li p{margin-bottom: 0;width: 30%;}
+.sub-02 .input-info-box ul li input{width: 65%;background: none;border: 1px solid #3A3A3F;color: #fff;padding: 10px; font-size: 14px;border-radius: 4px;}
+.sub-02 .input-info-box .tag{background: rgba(69, 158, 255, 0.1);color: rgba(69, 158, 255, 1);padding: 5px;border-radius: 30px;font-size: 14px;min-width: 50px;text-align: center;}
+
+/* 팝업 */
+.sub-02 .input-modal{display: none; position: fixed;top: 0;left: 0;z-index: 9999; width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(3px);align-items: center;justify-content: center;}
+.sub-02 .input-modal.on{display: flex;}
+.sub-02 .input-modal .modal-inner{background: rgba(26,39,68);max-width: 360px;width:100%;padding: 20px;border-radius: 10px;}
+.sub-02 .input-modal .tit{font-size: 18px;color: rgb(69, 173, 255);}
+.sub-02 .input-modal ul{color: #fff;font-size: 16px;padding: 20px 0;}
+.sub-02 .input-modal ul li{margin-bottom: 16px;}
+.sub-02 .input-modal ul li p{margin-bottom: 10px;font-weight: 500;color:rgba(255,255,255,.5)}
+.sub-02 .input-modal ul li input, .sub-02 .input-modal ul li select{background: rgba(26,39,68);border: 1px solid rgba(255,255,255,.5);color: #fff;padding: 10px; font-size: 14px;border-radius: 4px;width: 100%;}
+.sub-02 .input-modal .btn-wrap{display: flex;align-items: center;justify-content: center;gap: 14px;}
+.sub-02 .input-modal .btn-wrap button{background: none; color: #fff;padding: 10px; margin: 0;font: inherit;width: 100px;transition-duration: .3s;cursor:pointer;}
+.sub-02 .input-modal .btn-wrap button.submit{border: 1px solid #007aff;border-radius: 4px;background: #007aff;}
+.sub-02 .input-modal .btn-wrap button.close{border: 1px solid #E94A23;border-radius: 4px;background: #E94A23;}
+.sub-02 .input-modal .btn-wrap button.close:hover{color: #fff;}
 
 /* 반응형 */
 

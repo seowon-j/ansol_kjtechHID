@@ -1,5 +1,6 @@
-var options = {
-  series: [78], // 초기값
+// chart1 (랜덤 값 변화)
+var options1 = {
+  series: [30], // 초기값
   chart: {
     height: 280,
     type: "radialBar",
@@ -52,25 +53,28 @@ var options = {
 };
 
 // 차트 초기 렌더링
-var chart = new ApexCharts(document.querySelector("#chart1"), options);
-chart.render();
+var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
+chart1.render();
 
+// 값 업데이트 함수
 function updateValue(newValue) {
   document.querySelector(".chart-custom-label .value").innerHTML = `${newValue}<span>%</span>`;
 }
 
-//랜덤 값 생성 및 차트 업데이트 (1분마다 실행)
+// 랜덤 값 생성 및 차트 업데이트
 function updateChart() {
   let newValue = Math.floor(Math.random() * 100) + 1;
-  chart.updateSeries([newValue]);
+
+  options1.series = [newValue];
+  chart1.updateSeries([newValue]);
   updateValue(newValue);
 }
 
-setInterval(updateChart, 20000);
-updateValue(options.series[0]);
+setInterval(updateChart, 1500);
+updateValue(options1.series[0]);
 
-// 출입통계 그래프
-var options = {
+// chart2 (출입 통계 그래프)
+var options2 = {
   series: [
     {
       data: [2300, 3100, 2800, 3300, 4500, 3900, 4850, 3100, 2900, 3200, 1800, 2600],
@@ -118,14 +122,12 @@ var options = {
     enabled: false,
   },
   tooltip: {
-    theme: "dark", 
+    theme: "dark",
     custom: function ({ series, seriesIndex, dataPointIndex, w }) {
-      
       let monthYear = w.globals.labels[dataPointIndex];
       let value = series[seriesIndex][dataPointIndex].toLocaleString();
-
       return `
-            <div class="g-tooltip"">
+            <div class="g-tooltip">
                 <span>${monthYear}</span>
                 <p>${value} 명</p>
             </div>
@@ -157,11 +159,17 @@ var options = {
     borderColor: "#5C606F",
     strokeDashArray: 4, 
     position: "back",
+    xaxis: {
+      lines: {
+        show: true,
+      },
+    },
   },
   legend: {
     show: false,
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#chart2"), options);
-chart.render();
+
+var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+chart2.render();
