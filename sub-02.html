@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="fonts/material.css" />
     <!-- [remix Icon] -->
     <link rel="stylesheet" href="fonts/remixicon/remixicon.css" />
+    <!-- [swiper slider] -->
+    <link rel="stylesheet" href="css/plugins/swiper-bundle.min.css" />
     <!-- [Template CSS Files] -->
     <link rel="stylesheet" href="css/style.css" id="main-style-link" />
     <link rel="stylesheet" href="css/style-preset.css" />
@@ -49,7 +51,7 @@
                 <div class="tab-pane fade show active" id="tab-menu-pane-1" role="tabpanel" aria-labelledby="tab-menu-1" tabindex="0">
                   <div class="con-wrap">
                     <div class="img-box">
-                      <img src="images/customization/user-list-off.svg" alt="userlist" class="list-img-off" style="height: 730px;">
+                      <img src="images/customization/user-list-off.svg" alt="userlist" class="list-img-off" style="height: 730px" />
                     </div>
                     <!-- [list 기본상태] -->
                     <div class="info-wrap">
@@ -57,9 +59,15 @@
                         <div class="d-flex align-items-center justify-content-between mb-3">
                           <h5 class="tit mb-0 p-0">Basic Information</h5>
                           <ul class="btn-list">
-                            <li><a href="#" class="d-flex align-items-center gap-2"><i class="ri-edit-line"></i>Edit</a></li>
-                            <li><a href="#" class="d-flex align-items-center gap-2"><i class="ri-delete-bin-line"></i>Delete</a></li>
-                            <li><a href="#" class="btn-card d-flex align-items-center gap-2"><i class="ri-bank-card-line"></i>Card Registration</a></li>
+                            <li>
+                              <a href="#" class="d-flex align-items-center gap-2"><i class="ri-edit-line"></i>Edit</a>
+                            </li>
+                            <li>
+                              <a href="#" class="d-flex align-items-center gap-2"><i class="ri-delete-bin-line"></i>Delete</a>
+                            </li>
+                            <li>
+                              <a href="#" class="btn-card d-flex align-items-center gap-2"><i class="ri-bank-card-line"></i>Card Registration</a>
+                            </li>
                           </ul>
                         </div>
                         <div class="d-flex gap-3">
@@ -74,41 +82,41 @@
                             </div>
                           </div>
                           <!-- //profile -->
-                           <!-- [설정] -->
+                          <!-- [설정] -->
                           <div class="input-info-box card-box">
                             <strong class="text-white">Detailed information</strong>
                             <ul>
                               <li>
                                 <p>ID</p>
-                                <input type="text" value="ABC - 001" placeholder="id">
+                                <input type="text" value="ABC - 001" placeholder="id" />
                               </li>
                               <li>
                                 <p>Work Type</p>
-                                <input type="text" value="Permanent Employee" placeholder="Work Type">
+                                <input type="text" value="Permanent Employee" placeholder="Work Type" />
                               </li>
                               <li>
                                 <p>Phone</p>
-                                <input type="text" value="010-1234-5678" placeholder="010-0000-0000">
+                                <input type="text" value="010-1234-5678" placeholder="010-0000-0000" />
                               </li>
                               <li>
                                 <p>Work Status</p>
-                                <input type="text" value="Active" placeholder="Active">
+                                <input type="text" value="Active" placeholder="Active" />
                               </li>
                               <li>
                                 <p>Email</p>
-                                <input type="text" value="Booker@company.com" placeholder="Email">
+                                <input type="text" value="Booker@company.com" placeholder="Email" />
                               </li>
                               <li>
                                 <p>Work Location</p>
-                                <input type="text" value="Head Office (Gangnam-gu, Seoul)">
+                                <input type="text" value="Head Office (Gangnam-gu, Seoul)" />
                               </li>
                               <li>
                                 <p>Address</p>
-                                <input type="text" value="123, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea...">
+                                <input type="text" value="123, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea..." />
                               </li>
                               <li>
                                 <p>Card Information</p>
-                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly />
                               </li>
                             </ul>
                           </div>
@@ -118,7 +126,7 @@
                       </div>
                       <!-- 기본정보 -->
                       <div class="info-box s02">
-                        <img src="images/customization/user-list-table.svg" alt="table" style="width: 100%;">
+                        <img src="images/customization/user-list-table.svg" alt="table" style="width: 100%" />
                       </div>
                     </div>
                     <!-- //info-wrap -->
@@ -131,7 +139,7 @@
                         <li>
                           <p>CARD ID</p>
                           <!-- value 148 -->
-                          <input type="text" placeholder="id">
+                          <input type="text" placeholder="id" />
                         </li>
                         <li>
                           <p>CARD GROUP</p>
@@ -205,7 +213,8 @@
     <script src="js/plugins/feather.min.js"></script>
     <script src="js/plugins/ag-grid-community.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script> -->
-
+    <!-- swiper slide -->
+    <script src="js/plugins/swiper-bundle.min.js"></script>
     <!-- js 추가 -->
     <script src="js/table.js"></script>
   </body>

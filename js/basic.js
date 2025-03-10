@@ -171,3 +171,18 @@ document.querySelector(".sub-02 .input-modal .modal-btn-plus").addEventListener(
 document.querySelector(".sub-02 .input-modal .submit").addEventListener("click", function() {
     window.location.href = "sub-0201.html";
 });
+
+
+// visual slider
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        slides[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add("active");
+    }
+
+    setInterval(showNextSlide, 1000); 
+});
