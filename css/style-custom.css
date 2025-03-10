@@ -332,19 +332,22 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .sub-02 .input-info-box .tag{background: rgba(69, 158, 255, 0.1);color: rgba(69, 158, 255, 1);padding: 5px;border-radius: 30px;font-size: 14px;min-width: 50px;text-align: center;}
 
 /* 팝업 */
-.sub-02 .input-modal{display: none; position: fixed;top: 0;left: 0;z-index: 9999; width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(3px);align-items: center;justify-content: center;}
+.sub-02 .input-modal{display: none; position: fixed;top: 0;left: 0;z-index: 9999; width: 100vw;height: 100vh;background: rgba(43, 47, 50, .8); backdrop-filter: blur(3px);align-items: center;justify-content: center;}
 .sub-02 .input-modal.on{display: flex;}
-.sub-02 .input-modal .modal-inner{background: rgba(26,39,68);max-width: 360px;width:100%;padding: 20px;border-radius: 10px;}
+.sub-02 .input-modal .modal-inner{background: rgba(23, 27, 28, 1);max-width: 360px;width:100%;padding: 20px;border-radius: 10px;}
 .sub-02 .input-modal .tit{font-size: 18px;color: rgb(69, 173, 255);}
 .sub-02 .input-modal ul{color: #fff;font-size: 16px;padding: 20px 0;}
 .sub-02 .input-modal ul li{margin-bottom: 16px;}
 .sub-02 .input-modal ul li p{margin-bottom: 10px;font-weight: 500;color:rgba(255,255,255,.5)}
-.sub-02 .input-modal ul li input, .sub-02 .input-modal ul li select{background: rgba(26,39,68);border: 1px solid rgba(255,255,255,.5);color: #fff;padding: 10px; font-size: 14px;border-radius: 4px;width: 100%;}
+.sub-02 .input-modal ul li input, .sub-02 .input-modal ul li select{background: rgba(23, 27, 28, 1);border: 1px solid rgba(255,255,255,.3);color: #fff;padding: 10px; font-size: 14px;border-radius: 4px;width: 100%;}
 .sub-02 .input-modal .btn-wrap{display: flex;align-items: center;justify-content: center;gap: 14px;}
 .sub-02 .input-modal .btn-wrap button{background: none; color: #fff;padding: 10px; margin: 0;font: inherit;width: 100px;transition-duration: .3s;cursor:pointer;}
 .sub-02 .input-modal .btn-wrap button.submit{border: 1px solid #007aff;border-radius: 4px;background: #007aff;}
 .sub-02 .input-modal .btn-wrap button.close{border: 1px solid #E94A23;border-radius: 4px;background: #E94A23;}
 .sub-02 .input-modal .btn-wrap button.close:hover{color: #fff;}
+.sub-02 .input-modal .modal-btn-plus{width: 100%;background: none; color: rgba(69, 158, 255, 1);background: rgba(69, 158, 255, 0.1);padding: 10px; margin: 0;font: inherit;border: 1px solid rgba(69, 158, 255, 1);border-radius: 4px;margin: 10px 0;text-align: center;}
+.sub-02 .input-modal .modal-more-select{display: none;}
+.sub-02 .input-modal .modal-more-select.active{display: block;}
 
 /* 반응형 */
 

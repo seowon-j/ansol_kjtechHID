@@ -70,7 +70,7 @@ function updateChart() {
   updateValue(newValue);
 }
 
-setInterval(updateChart, 1500);
+setInterval(updateChart, 4000);
 updateValue(options1.series[0]);
 
 // chart2 (출입 통계 그래프)
