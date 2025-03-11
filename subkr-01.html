@@ -160,6 +160,22 @@
     
     <!-- js 추가 -->
     <script src="js/table.js"></script>
+
+    <!-- visual-slide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+          loop: true,
+          effect: "fade",
+          fadeEffect: { crossFade: true },
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1,
+        });
+      });
+    </script>
   </body>
   <!-- [Body] end -->
 </html>

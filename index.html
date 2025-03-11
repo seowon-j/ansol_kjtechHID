@@ -50,6 +50,7 @@
               <div class="tab-content col" id="myTabContent">
                 <div class="tab-pane fade show active" id="tab-menu-pane-1" role="tabpanel" aria-labelledby="tab-menu-1" tabindex="0">
                   <!-- [메인 대시보드 시작] -->
+
                   <div class="con-wrap row" id="main-dashboard">
                     <div class="col-xxl-8 col-xl-12">
                       <div class="card p-3">
@@ -454,14 +455,10 @@
 
     <!-- js -->
     <script src="js/basic.js"></script>
-    <!-- <script src="js/table.js"></script> -->
 
     <!-- [Page Specific JS] start -->
     <script src="js/plugins/apexcharts.min.js"></script>
-    <script src="js/Widgets/visitor-chart.js"></script>
-    <script src="js/Widgets/income-overview-chart.js"></script>
-    <script src="js/Widgets/analytics-report-chart.js"></script>
-    <script src="js/Widgets/sales-report-chart.js"></script>
+
     <!-- [Page Specific JS] end-->
 
     <!-- Required Js -->
@@ -478,9 +475,24 @@
     <script src="js/plugins/feather.min.js"></script>
 
     <!-- swiper slide -->
-    <!-- <script src="js/plugins/swiper-bundle.min.js"></script> -->
+    <script src="js/plugins/swiper-bundle.min.js"></script>
 
     <script src="js/chart.js"></script>
+    <!-- visual-slide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+          loop: true,
+          effect: "fade",
+          fadeEffect: { crossFade: true },
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1,
+        });
+      });
+    </script>
   </body>
   <!-- [Body] end -->
 </html>

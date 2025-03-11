@@ -116,7 +116,10 @@
                               </li>
                               <li>
                                 <p>Card Information</p>
-                                <input type="text" value="" readonly />
+                                <!-- <input type="text" value="" readonly /> -->
+                                <div class="d-flex align-items-center cbox" style="height: 38px;width: 65%;">
+                                  <span class="tag">34469</span>
+                                </div>
                               </li>
                             </ul>
                           </div>
@@ -138,7 +141,7 @@
                       <ul>
                         <li>
                           <p>CARD ID</p>
-                          <!-- value 148 -->
+                          <!-- value 34469 -->
                           <input type="text" placeholder="id" />
                         </li>
                         <li>
@@ -180,7 +183,9 @@
                   <!-- //input-modal -->
                 </div>
                 <!-- //tab_01 -->
-                <div class="tab-pane fade" id="tab-menu-pane-2" role="tabpanel" aria-labelledby="tab-menu-2" tabindex="0">두번째 탭 입니다.</div>
+                <div class="tab-pane fade" id="tab-menu-pane-2" role="tabpanel" aria-labelledby="tab-menu-2" tabindex="0">
+                  
+                </div>
                 <!-- //tab_02 -->
                 <div class="tab-pane fade" id="tab-menu-pane-3" role="tabpanel" aria-labelledby="tab-menu-2" tabindex="0">세번째 탭</div>
                 <!-- //tab_03 -->
@@ -215,8 +220,22 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script> -->
     <!-- swiper slide -->
     <script src="js/plugins/swiper-bundle.min.js"></script>
-    <!-- js 추가 -->
-    <script src="js/table.js"></script>
+
+    <!-- visual-slide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+          loop: true,
+          effect: "fade",
+          fadeEffect: { crossFade: true },
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1,
+        });
+      });
+    </script>
   </body>
   <!-- [Body] end -->
 </html>

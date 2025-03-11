@@ -168,21 +168,19 @@ document.querySelector(".sub-02 .input-modal .modal-btn-plus").addEventListener(
     document.querySelector(".sub-02 .input-modal .modal-more-select").classList.add("active");
 });
 
-document.querySelector(".sub-02 .input-modal .submit").addEventListener("click", function() {
-    window.location.href = "sub-0201.html";
-});
-
-
-// visual slider
 document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".slide");
-    let currentIndex = 0;
+    const submitButton = document.querySelector(".sub-02 .input-modal .submit");
+    const inputModal = document.querySelector(".sub-02 .input-modal");
+    const tagElement = document.querySelector(".input-info-box .cbox .tag");
 
-    function showNextSlide() {
-        slides[currentIndex].classList.remove("active");
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add("active");
+    if (submitButton && inputModal && tagElement) {
+        submitButton.addEventListener("click", function () {
+            if (inputModal.classList.contains("on")) {
+                inputModal.classList.remove("on");
+                tagElement.classList.add("on");
+            }
+        });
+    } else {
+        console.error("error");
     }
-
-    setInterval(showNextSlide, 1000); 
 });

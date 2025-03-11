@@ -43,7 +43,7 @@
         <div class="row pt-3">
           <div class="col p-0">
             <div class="card main-visual rounded-2 overflow-hidden position-relative">
-              <div class="includeJs card-body" data-include-html="include/sub-header.html"></div>
+              <div class="includeJs card-body" data-include-html="include/sub-header-2.html"></div>
             </div>
             <!-- //main-visual -->
             <div class="row">
@@ -144,7 +144,6 @@
     <script src="js/plugins/simplebar.min.js"></script>
     <script src="js/plugins/bootstrap.min.js"></script>
     <script src="js/fonts/custom-font.js"></script>
-    <script src="js/fonts/custom-ant-icon.js"></script>
     <script src="js/plugins/i18next.min.js"></script>
     <script src="js/plugins/i18nextHttpBackend.min.js"></script>
     <script src="js/pcoded.js"></script>
@@ -155,9 +154,23 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script> -->
     <!-- swiper slide -->
     <script src="js/plugins/swiper-bundle.min.js"></script>
-
     <!-- js 추가 -->
     <script src="js/table.js"></script>
+    <!-- visual-slide -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+          loop: true,
+          effect: "fade",
+          fadeEffect: { crossFade: true },
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1,
+        });
+      });
+    </script>
   </body>
   <!-- [Body] end -->
 </html>
