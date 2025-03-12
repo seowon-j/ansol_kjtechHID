@@ -239,7 +239,7 @@ body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !import
 .chart-custom-label .status { font-size: var(--fz-body-s); } 
 .chart-custom-label .value { font-size: 64px; font-weight: 700; } 
 .chart-custom-label .value span { font-size: var(--fz-body-m); font-weight: 400; } 
-.chart-custom-label .description { font-size: var(--fz-body-s); color: var(--bs-gray); padding: 0 10px;line-height: 18px;} 
+.chart-custom-label .description { font-size: var(--fz-body-s); color: var(--bs-gray); padding: 0 10px;line-height: 18px;max-width: 80%;margin: 0 auto;} 
 
 /* 출입문 개요 */
 .door-overview .card{border: none;background:VAR(--bs-gray2) !important;margin-bottom: 0;}
