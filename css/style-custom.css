@@ -77,7 +77,8 @@
 .btn,
 .introjs-tooltip .introjs-button { --bs-btn-font-family: var(--bs-font-sans-serif); --bs-btn-line-height: 1; } 
 
-body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !important; } 
+body { font-family: var(--bs-font-sans-serif) !important; line-height: 1 !important; scrollbar-width: none;overflow: hidden;}
+body::-webkit-scrollbar {display: none; /* Chrome, Safari */} 
 
 #wrapper { display: flex; height: 100%; } 
 .breadcrumb{margin-bottom: 0;}

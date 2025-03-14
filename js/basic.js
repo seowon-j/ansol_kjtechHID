@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //     document.body.style.height = `${window.screen.height}px`;
 //     document.body.style.overflow = "hidden";
 // }
-// 페이지 로드 및 창 크기 변경 시 적용
+// // 페이지 로드 및 창 크기 변경 시 적용
 // document.addEventListener("DOMContentLoaded", setBodyHeight);
 // window.addEventListener("resize", setBodyHeight);
 
@@ -64,7 +64,8 @@ function setBodyHeight() {
 // 스크롤바 숨기기 (Webkit 기반 브라우저 - Chrome, Safari)
 const style = document.createElement("style");
 style.innerHTML = `
-    .container::-webkit-scrollbar {
+    body{scrollbar-width: none;}
+    body::-webkit-scrollbar {
         display: none; /* Chrome, Safari */
     }
 `;
